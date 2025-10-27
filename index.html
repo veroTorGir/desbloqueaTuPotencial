@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desbloquea tu Potencial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">🔒 Desbloquea tu Potencial</div>
+      <ul>
+        <li><a href="#" onclick="navigate('contenido')">Contenido</a></li>
+        <li><a href="#" onclick="navigate('cronograma')">Cronograma</a></li>
+        <li><a href="#" onclick="navigate('prioridades')">Prioridades</a></li>
+        <li>
+          <a
+            href="#"
+            id="login-link"
+            class="active"
+            onclick="navigate('iniciar-sesion')"
+            >Iniciar Sesión</a
+          >
+        </li>
+        <li><a href="#" onclick="navigate('registrarse')">Registrarse</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main id="main-content">
+      <div class="login-container">
+        <h2>Enter your password</h2>
+        <input
+          type="email"
+          id="email"
+          placeholder="abc123@example.com"
+          value="abc123@example.com"
+        />
+        <input type="password" id="password" placeholder="Password" />
+        <a href="#" class="link">Forgot password?</a>
+        <button id="continue-btn">Continue</button>
+
+        <p>
+          Don’t have an account?
+          <a href="#" onclick="navigate('registrarse')">Sign Up</a>
+        </p>
+        <hr />
+        <div class="footer-links">
+          <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
